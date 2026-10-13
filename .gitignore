@@ -1,0 +1,35 @@
+# Python cache files — never upload these
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.env
+.venv
+venv/
+env/
+
+# Temporary debug/test scripts created during development
+_score_check.py
+_debug_bank.py
+_debug_delivery.py
+_test_about.py
+
+# Personal / private files — do not upload
+2026 CONGRESSIONAL APP FILES/
+KIRO_PROJECT_CONTEXT.txt
+ProjectDocumentation.txt
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# macOS system files
+.DS_Store
+
+# pytest cache
+.pytest_cache/
+
+# Streamlit secrets (if you ever add one)
+.streamlit/secrets.toml

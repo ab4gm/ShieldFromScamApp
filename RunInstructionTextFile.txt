@@ -1,0 +1,158 @@
+================================================================
+  SHIELDFROMSCAMAPP — RUN INSTRUCTIONS
+  Congressional App Challenge, District 6
+  Saved: C:\Users\gincy\Desktop\CongressionalAppDistrict6
+================================================================
+
+----------------------------------------------------------------
+  WHAT WAS BUILT
+----------------------------------------------------------------
+
+ShieldFromScamApp is a Python web app built with Streamlit that
+helps everyday people — especially seniors — spot and avoid scams.
+
+The app has 5 pages:
+
+  1. Home
+     The welcome screen. Explains what the app does and how
+     to navigate it.
+
+  2. Message Analyzer
+     Paste any suspicious text, email, or phone script.
+     The app scans it for 50+ known scam phrases, gives it
+     a risk score from 0 to 100, and explains every red flag
+     it found. No internet needed — runs on your computer.
+
+  3. Scam Quiz
+     An 8-question interactive quiz. Read a scenario, decide
+     if it's a scam or legit, then see the explanation.
+     Great for learning and for school presentations.
+
+  4. Scam Library
+     Expandable guides for 8 major scam types:
+     phone scams, email phishing, text scams, lottery scams,
+     romance scams, tech support scams, grandparent scams,
+     and crypto/investment scams.
+
+  5. Report a Scam
+     Real US government links and phone numbers to report fraud:
+     FTC, FBI IC3, AARP Helpline, CFPB, and more.
+
+  6. About
+     Explains the project, how the app works, and the
+     Congressional App Challenge details.
+
+----------------------------------------------------------------
+  FILES IN YOUR PROJECT FOLDER
+----------------------------------------------------------------
+
+  CongressionalAppDistrict6\
+  |
+  |-- Home.py                  (main app file — run this one)
+  |-- requirements.txt         (list of packages to install)
+  |-- run_app.bat              (double-click shortcut to open app)
+  |-- README.md                (project documentation)
+  |-- RunInstructionTextFile.txt  (this file)
+  |
+  |-- pages\
+  |   |-- 1_Message_Analyzer.py
+  |   |-- 2_Scam_Quiz.py
+  |   |-- 3_Scam_Library.py
+  |   |-- 4_Report_a_Scam.py
+  |   |-- 5_About.py
+  |
+  |-- utils\
+  |   |-- scam_detector.py     (the scam analysis engine)
+  |   |-- __init__.py
+  |
+  |-- assets\                  (empty — for future images/logos)
+
+----------------------------------------------------------------
+  HOW TO RUN THE APP — EVERY TIME
+----------------------------------------------------------------
+
+EASY METHOD (Recommended):
+  1. Go to your Desktop
+  2. Open the folder: CongressionalAppDistrict6
+  3. Double-click the file:  run_app.bat
+  4. A black terminal window will open
+  5. Wait 5-10 seconds
+  6. Your browser will open automatically at:
+         http://localhost:8501
+  7. To stop the app: click the terminal window and press Ctrl+C
+
+MANUAL METHOD (Using Command Prompt):
+  Step 1 — Open Command Prompt
+            Press the Windows key, type "cmd", press Enter
+
+  Step 2 — Navigate to the project folder
+            Type this exactly and press Enter:
+            cd C:\Users\gincy\Desktop\CongressionalAppDistrict6
+
+  Step 3 — Start the app
+            Type this and press Enter:
+            python -m streamlit run Home.py
+
+  Step 4 — Open your browser and go to:
+            http://localhost:8501
+
+  Step 5 — To stop the app, press Ctrl+C in the terminal
+
+----------------------------------------------------------------
+  FIRST-TIME SETUP (Only do this ONCE)
+----------------------------------------------------------------
+
+You only need to install the package once. It is already
+installed on this computer. But if you move to a new computer:
+
+  Step 1 — Install Python from:
+            https://www.python.org/downloads/
+            IMPORTANT: Check "Add Python to PATH" when installing!
+
+  Step 2 — Open Command Prompt and run:
+            cd C:\Users\gincy\Desktop\CongressionalAppDistrict6
+            pip install -r requirements.txt
+
+  Step 3 — Then follow the "HOW TO RUN" steps above.
+
+----------------------------------------------------------------
+  TROUBLESHOOTING
+----------------------------------------------------------------
+
+  PROBLEM: Browser does not open automatically
+  SOLUTION: Open your browser manually and go to:
+            http://localhost:8501
+
+  PROBLEM: "streamlit is not recognized" error
+  SOLUTION: Use this command instead of "streamlit run":
+            python -m streamlit run Home.py
+
+  PROBLEM: "pip is not recognized" error
+  SOLUTION: Reinstall Python and check "Add Python to PATH"
+
+  PROBLEM: App shows an error page
+  SOLUTION: Make sure you are running the command from inside
+            the CongressionalAppDistrict6 folder
+
+  PROBLEM: Port already in use
+  SOLUTION: Close any other terminal windows running the app,
+            or go to: http://localhost:8502
+
+----------------------------------------------------------------
+  QUICK REFERENCE CARD
+----------------------------------------------------------------
+
+  To start:   double-click run_app.bat
+              OR run:  python -m streamlit run Home.py
+
+  App opens at:   http://localhost:8501
+
+  To stop:    press Ctrl+C in the terminal window
+
+  Install packages (first time only):
+              pip install -r requirements.txt
+
+================================================================
+  Created for the 2026 Congressional App Challenge, District 6
+  App name: ShieldFromScamApp
+================================================================
